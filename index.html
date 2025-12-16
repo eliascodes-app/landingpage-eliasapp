@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>EliasCodes — Web Apps, Automation & Digital Products</title>
+  <meta name="description" content="EliasCodes builds custom web apps, automation, themes, and scripts for businesses of all sizes." />
+
+  <meta property="og:title" content="EliasCodes — Web Apps, Automation & Digital Products" />
+  <meta property="og:description" content="Custom web apps, automation, themes, and scripts for startups, teams, and enterprises." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eliascodes.app" />
+  <meta property="og:image" content="https://eliascodes.app/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EliasCodes — Web Apps, Automation & Digital Products" />
+  <meta name="twitter:description" content="Custom web apps, automation, themes, and scripts for modern businesses." />
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header, section, footer { max-width: 1100px; margin: auto; padding: 3rem 1.5rem; }
+
+    .hero h1 { font-size: 2.5rem; margin: 0; }
+    .hero p { color: var(--muted); max-width: 600px; }
+    .cta { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .btn { padding: 0.75rem 1.25rem; border-radius: 8px; background: var(--accent); color: white; font-weight: 600; }
+    .btn.secondary { background: transparent; border: 1px solid var(--accent); }
+
+    h2 { margin-top: 0; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--card); padding: 1.5rem; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .card p { color: var(--muted); }
+
+    form { display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin: 0 auto; }
+    input, textarea, select {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      background: #f3f4f6;
+      color: #111827;
+    }
+    textarea { min-height: 120px; }
+
+    .form-actions { display: flex; flex-direction: column; align-items: flex-start; }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+    table th, table td { border: 1px solid #d1d5db; padding: 0.75rem; text-align: center; }
+    table th { background: var(--accent); color: white; }
+    /* New styling for pricing cards */
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;}
+    .pricing-card { background: var(--card); padding: 2rem; border-radius: 12px; text-align: center; border: 1px solid #e5e7eb;}
+    .pricing-card.highlight { border: 3px solid var(--accent); box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);}
+    .pricing-card h3 { color: var(--accent); margin-top: 0;}
+    .pricing-card .price { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;}
+    .pricing-card ul { list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;}
+    .pricing-card ul li { margin-bottom: 0.5rem; color: var(--muted);}
+
+    footer { border-top: 1px solid #222; text-align: center; color: var(--muted); }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero text-center bg-white rounded shadow-sm">
+  <h1>EliasCodes — Web Apps & Automation</h1>
+  <p class="mx-auto">Showcasing work, selling web apps, themes, and scripts. Custom app development for small, mid, and big companies.</p>
+  <div class="cta justify-content-center">
+    <a class="btn btn-primary btn-lg" href="#contact">Request a Quote</a>
+    <a class="btn btn-secondary btn-lg" href="#free">Free Pack</a>
+  </div>
+</header>
+
+<section id="free" class="bg-white rounded shadow-sm">
+  <h2 class="text-center">Free Automation Starter Pack: Your Demo Access</h2>
+  <p class="text-center text-muted">Perfect for Instagram visitors — get real value before you buy. This serves as your <strong>FREE Demo</strong> and unlocks our community.</p>
+  <div class="grid mt-4">
+    <div class="card">
+      <h4><i class="bi bi-gift text-primary"></i> What you get</h4>
+      <ul class="mt-3">
+        <li>✔ 5 real-world automation use cases</li>
+        <li>✔ <strong>1 Starter Script Demo</strong> & workflow checklist</li>
+        <li>✔ App & SaaS architecture checklist</li>
+        <li>✔ How I price & scope custom projects</li>
+      </ul>
+      <p class="text-muted mt-3">No spam. Pure value. Built for founders and teams.</p>
+    </div>
+    <div class="card">
+      <h4>Get instant access</h4>
+      <p class="text-muted">Instant delivery via Gumroad (email capture + download).</p>
+      <a class="btn btn-primary btn-lg position-relative" href="https://eliascodesapp.gumroad.com/l/free-pack-slug" target="_blank">
+        Get the <strong>FREE</strong> pack on Gumroad
+        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+          Limited Time!
+        </span>
+      </a>
+      <small class="text-muted d-block mt-2">No spam. Unsubscribe anytime.</small>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Products</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Automation Scripts</h3>
+      <p>Ready-to-use scripts for common business workflows.</p>
+      <a class="btn btn-primary mt-2" href="https://eliascodesapp.gumroad.com/l/automation-scripts-slug" target="_blank">Buy on Gumroad</a>
+    </div>
+    <div class="card">
+      <h3>Web Themes</h3>
+      <p>Modern, responsive themes built for speed and conversions.</p>
+      <a class="btn btn-primary mt-2" href="https://eliascodesapp.gumroad.com/l/web-themes-slug" target="_blank">Buy on Gumroad</a>
+    </div>
+    <div class="card">
+      <h3>Web Apps</h3>
+      <p>Small tools designed to solve specific problems quickly.</p>
+      <a class="btn btn-primary mt-2" href="https://eliascodesapp.gumroad.com/l/mini-web-apps-slug" target="_blank">Buy on Gumroad</a>
+    </div>
+  </div>
+
+  <h2 class="mt-5 text-center">Packages to Accelerate Your Daily Work</h2>
+  <p class="text-center text-muted">Choose the package that accelerates your business the fastest. All purchases are <strong>one-time payments.</strong></p>
+  <div class="pricing-grid">
+    
+    <div class="pricing-card">
+        <h3>Productivity Package</h3>
+        <p class="price">$49</p>
+        <p class="text-muted">Focus on automating personal tasks and data entry.</p>
+        <ul>
+            <li><i class="bi bi-check-circle-fill text-success"></i> <strong>10 Core Productivity Scripts</strong> (Data entry, quick tasks)</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 1 Premium Web Theme (For a simple personal site)</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 1 Basic Web App Tool</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 6 Months Updates</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Community Support</li>
+        </ul>
+        <a href="https://eliascodesapp.gumroad.com/" class="btn btn-primary w-100">Get Productivity Package</a>
+    </div>
+
+    <div class="pricing-card highlight">
+        <h3>System Admin Package <span class="badge bg-primary">Most Popular</span></h3>
+        <p class="price">$199</p>
+        <p class="text-muted">Designed for monitoring, maintenance, and technical teams.</p>
+        <ul>
+            <li><i class="bi bi-check-circle-fill text-success"></i> <strong>All 25+ Monitoring & SysAdmin Scripts</strong></li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 3 Premium Web Themes</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 3 Core Web Apps (Log Parsers, Health Checkers)</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 1 Year Priority Updates & Support</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> <strong>Exclusive SysAdmin Tutorial Videos</strong></li>
+        </ul>
+        <a href="https://eliascodesapp.gumroad.com/" class="btn btn-primary w-100">Get System Admin Package</a>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Productivity, System & Custom Dev</h3>
+        <p class="price">$499+</p>
+        <p class="text-muted">The ultimate value: complete access and dedicated custom resources.</p>
+        <ul>
+            <li><i class="bi bi-check-circle-fill text-success"></i> <strong>All Current & Future Scripts/Themes/Apps</strong></li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Full Source Files & Developer API Access</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> <strong>Lifetime</strong> Priority Updates</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 1-Hour <strong>Consultation Zoom Call</strong></li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Personalized <strong>Product Demo</strong></li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Option to Add Dedicated Technical Support</li>
+        </ul>
+        <a href="https://eliascodesapp.gumroad.com/" class="btn btn-secondary w-100">Go Lifetime</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="portfolio" class="bg-white rounded shadow-sm mt-5">
+  <h2 class="text-center">Case Studies & Quick Wins: Learn My 3-Step Process</h2>
+  <p class="text-center text-muted">See how I approach complex problems, build custom solutions, and automate results. Each card links to a detailed breakdown on Instagram.</p>
+  <div class="grid mt-4" id="portfolio-items">
+
+    <div class="card">
+      <h4>Automate Data Entry (Slack to Sheet)</h4>
+      <p><strong>The Challenge:</strong> A team manually copied daily status updates from Slack into a Google Sheet, wasting 2 hours/day.</p>
+      <ol class="mt-3">
+        <li><strong>Step 1: Identify Trigger.</strong> Set up a webhook to fire when a specific Slack message is posted.</li>
+        <li><strong>Step 2: Clean & Map.</strong> Use a mini-script to parse the message text and format it into structured JSON.</li>
+        <li><strong>Step 3: Auto-Insert.</strong> Push the structured data directly into the corresponding Google Sheet row.</li>
+      </ol>
+      <a href="https://instagram.com/instagram" class="btn btn-primary mt-2" target="_blank">View ➜ (See the Reel)</a>
+    </div>
+
+    <div class="card">
+      <h4>Automatic App Health Check with Python</h4>
+      <p><strong>The Challenge:</strong> Manual status checks lead to slow incident response and wasted engineering time.</p>
+      <ol class="mt-3">
+        <li><strong>Step 1: Setup Script.</strong> Write a Python script using <code>requests</code> to hit the application's health endpoint (e.g., <code>/status</code>).</li>
+        <li><strong>Step 2: Define Condition.</strong> Define a success condition (HTTP 200) and an alert condition for any other status code.</li>
+        <li><strong>Step 3: Schedule & Alert.</strong> Schedule the script via a task runner (like cron or Cloud Scheduler) and trigger a Slack/email alert on failure.</li>
+      </ol>
+      <a href="https://instagram.com/instagram" class="btn btn-primary mt-2" target="_blank">View ➜ (See the Post)</a>
+    </div>
+
+    <div class="card">
+      <h4>Efficient Log Parsing & Analysis</h4>
+      <p><strong>The Challenge:</strong> Sifting through GBs of unstructured log files takes hours and misses critical errors and trends.</p>
+      <ol class="mt-3">
+        <li><strong>Step 1: Filter Keywords.</strong> Use Python's <code>re</code> (regex) to quickly filter logs for key terms (e.g., <code>[ERROR]</code>, <code>CRITICAL</code>, <code>404</code>).</li>
+        <li><strong>Step 2: Structure Data.</strong> Convert the messy unstructured log lines into structured JSON or CSV records for easy processing.</li>
+        <li><strong>Step 3: Visualize Trends.</strong> Send the structured log data to a local file viewer or a simple dashboard tool for rapid visualization of error trends.</li>
+      </ol>
+      <a href="https://instagram.com/instagram" class="btn btn-primary mt-2" target="_blank">View ➜ (See the Guide)</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials" class="mt-5">
+  <h2 class="text-center">Trusted by Founders & Teams</h2>
+  <p class="text-center text-muted">Hear what others are saying about my scripts and consulting.</p>
+  <div class="grid mt-4">
+    <div class="card">
+      <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-half text-warning"></i>
+      </div>
+      <p class="mb-0">"Honestly, I was skeptical about a 'free pack,' but Elias's included checklists immediately showed me what I was missing in my SaaS architecture. The paid scripts were a no-brainer after that."</p>
+      <small class="d-block mt-3 fw-bold">- Alex P., Software Engineer & Founder</small>
+    </div>
+    <div class="card">
+      <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning"></i>
+      </div>
+      <p class="mb-0">"The custom automation Elias built literally replaced two full-time tasks for our small team. It's not just coding; it's smart business optimization. <strong>Huge ROI.</strong>"</p>
+      <small class="d-block mt-3 fw-bold">- Jessica R., Operations Manager</small>
+    </div>
+    <div class="card">
+      <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning me-1"></i><i class="bi bi-star-fill text-warning"></i>
+      </div>
+      <p class="mb-0">"I needed a clean, fast theme for my portfolio and the templates delivered. Simple purchase, instant results, and no bloated code. Exactly what I was looking for."</p>
+      <small class="d-block mt-3 fw-bold">- Leo T., Freelance Designer</small>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="rounded shadow-sm" style="background:#f3f4f6;color:#111827;">
+  <h2 class="text-center">Request a Quote</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <input name="name" placeholder="Your name" required />
+    <input name="email" type="email" placeholder="Email" required />
+    <select name="company_size">
+      <option>Solo / Small</option>
+      <option>Mid-size</option>
+      <option>Enterprise</option>
+    </select>
+    <select name="budget_range">
+      <option>Under $500</option>
+      <option>$500 - $1,500</option>
+      <option>$1,500 - $5,000</option>
+      <option>$5,000+</option>
+    </select>
+    <textarea name="project" placeholder="Tell me about your project"></textarea>
+    <div class="form-actions">
+      <button class="btn btn-primary btn-lg" type="submit">Send Request</button>
+      <small class="text-muted d-block mt-2">Response within 24–48 business hours</small>
+    </div>
+  </form>
+</section>
+
+<section id="about" class="bg-white rounded shadow-sm mt-5">
+  <h2 class="text-center">👋 Let's Connect: A Note from Elias</h2>
+  <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+    <p class="text-muted">
+      Hi there, I'm Elias. For over <strong>20 years</strong>, I’ve been hands-on in IT, specializing in System Architecture, application development, and building robust cloud solutions. Lately, my focus has been simple: <strong>automation that actually resolves complex business problems.</strong>
+    </p>
+    <p class="text-muted">
+      I’m not interested in just dropping code snippets; I'm here to build systems that work for <em>you</em>. On the side, I genuinely enjoy teaching—I create content and have been fortunate enough to teach technology to <strong>over 65,000 students worldwide.</strong> I understand your challenges, and I know how to translate them into technical solutions.
+    </p>
+    <p class="text-muted">
+      If you have a project idea, a thorny problem, or just a question about your tech stack, please send me an email. Let's talk about how we can automate your next win.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 EliasCodes.app. All rights reserved. <a href="https://instagram.com/instagram" target="_blank">Instagram</a> · <a href="https://eliascodesapp.gumroad.com/" target="_blank">Gumroad</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
